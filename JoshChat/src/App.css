@@ -1,0 +1,11 @@
+.App{
+  margin-top: 0px;
+  background-image: linear-gradient(rgb(4, 1, 39),rgb(97, 73, 187),rgb(4, 1, 39));
+  min-height: 100vh;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#stupidtext{
+  margin-top: 0px;
+}

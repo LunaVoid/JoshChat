@@ -1,0 +1,35 @@
+.AllHolder{
+
+}
+
+.idholder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.iditem{
+    margin: 10px;
+}
+.ChatHolder{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Chat{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    width: 60vw;
+    height: 80vh;
+    
+    
+    
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    
+}
