@@ -1,10 +1,9 @@
 import React from 'react'
 import "./Chat.css"
 import Logout from './Logout'
-import {db} from "../firebase"
+import {db, auth} from "../firebase"
 import Chatmessage from './Chatmessage'
 import MessageSend from './messageSend'
-import Test from './test'
 import { onSnapshot, orderBy, query, collection } from 'firebase/firestore'
 
 // at 27:31 https://www.youtube.com/watch?v=PJCr_aoOv68
@@ -38,7 +37,6 @@ function Chat(props) {
         <div className='idholder'>
             <img className='iditem' src = {props.user.photoURL}  referrerPolicy = "no-referrer"/>
             <p className='iditem'>{"Welcome to the Chat "+ props.user.displayName}</p>
-            {console.log(props.user.displayName)}
             <Logout/>
         </div>
         <h1>Chat</h1>
@@ -46,12 +44,10 @@ function Chat(props) {
           <MessageSend/>
           </div>
         <div className='ChatHolder'>
-          
+        
           
           {messages && messages.map((message) =>{
-            console.log(message)
-            
-            return(<Chatmessage key = {message.id} contents = {message.text} sender = {message.sender} time = {message.timestamp}/>)
+            return(<Chatmessage key = {message.id} contents = {message.text} sender = {message.sender} time = {message.timestamp} photoURL = {message.photoUrl}/>)
             
           })}
 

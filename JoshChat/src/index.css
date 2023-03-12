@@ -2,5 +2,6 @@ body{
   margin: 0px;
   margin-top: 0;
   padding: 0px;
+  overflow-x: hidden;
   
 }

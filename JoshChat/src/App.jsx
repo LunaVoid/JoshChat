@@ -8,7 +8,6 @@ import Chat from './components/Chat'
 
 function App() {
   const [user] = useAuthState(auth)
-  console.log(user)
 
 
   return (
